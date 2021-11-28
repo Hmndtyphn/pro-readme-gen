@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
+function LicenseBadge(data) {
   if (data.license === "Apache") {
    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
   }
@@ -31,7 +31,7 @@ function renderLicenseBadge(data) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 
-function renderLicenseLink(data) {
+function LicenseLink(data) {
 if (data.license === "Apache") {
   return "<https://www.apache.org/licenses/LICENSE-2.0>"
  }
@@ -59,23 +59,23 @@ if (data.license === "IBM") {
 };
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(data) {
+function LicenseSection(data) {
   if (data.license === "None") {
     return ""
   } else {
     return `
-    ${renderLicenseBadge(data)} 
+    ${LicenseBadge(data)} 
     <br>
-    ${renderLicenseLink(data)}`
+    ${LicenseLink(data)}`
   }
 };
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  var licenseCheck = renderLicenseSection(data);
+  var licenseCheck = LicenseSection(data);
   var licenseTitle = "## License";
-  return `${renderLicenseBadge(data)}
+  return `${LicenseBadge(data)}
   # ${data.title}
 ## Table of Contents 
 * [Description](#Description)  <br>
@@ -100,9 +100,9 @@ function generateMarkdown(data) {
   ${data.Test}
   
   ${(licenseCheck !== "") ? licenseTitle: ""}
-  ${(licenseCheck !== "") ? renderLicenseBadge(data):""}
+  ${(licenseCheck !== "") ? renderBadge(data):""}
   <br>
-  ${(licenseCheck !== "") ? renderLicenseLink(data):""} 
+  ${(licenseCheck !== "") ? renderLink(data):""} 
   ## Questions / Report an Issue
   #### Contact Me @: ${data.Email}<br>
   #### GitHub Profile: ${data.GitHub}
