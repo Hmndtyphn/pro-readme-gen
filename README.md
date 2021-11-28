@@ -16,7 +16,7 @@
   After install, to start the application use 'node index.js' on the command line, then follow the prompts<br>
   undefined
   ## Contributing
-  The internet <br>
+  n/a <br>
   
   
   ## Tests
@@ -30,7 +30,6 @@
   #### Contact Me @: Jared.elliott09@gmail.com<br>
   #### GitHub Profile: Hmndtyphn
   #### GitHub Repo Link: https://github.com/Hmndtyphn/pro-readme-gen
-
   #### Video tutorial link: 
 
 <p align="center">
