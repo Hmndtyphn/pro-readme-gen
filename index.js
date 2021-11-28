@@ -1,32 +1,32 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./Develop/utils/generateMarkdown");
 console.log(generateMarkdown);
-
+// for reading file sys
 const fs = require("fs");
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
     name: "title",
-    message: "what is the title of your project"
+    message: "What is your project's title?"
 },
 {
     type: "input",
     name: "Description",
-    message: "what is the description of your project"
+    message: "Give a short description of your project."
 },
 
 {
 type: "input",
 name: "Installation",
-message: "What are the steps required to install your project? Provide steps on getting the environment into development"
+message: "What steps are required to install and run your project?"
 },
 
 {
     type: "input",
     name: "Usage",
-    message: "What instructions do you need for usage?"
+    message: "What instructions do you need to use your application?"
     },
     
    
@@ -58,19 +58,19 @@ message: "What are the steps required to install your project? Provide steps on 
     
         type: "input",
         name: "Email",
-        message: "What is your Email?"
+        message: "What is your Email? address?"
     },
     
     {
     
         type: "input",
         name: "GitHub",
-        message: "What is your GitHub username?"
+        message: "What is your GitHub username for this project?"
     },
     {
     type: "input",
     name: "Repo",
-    message: "What is your GitHub Repo Link?"
+    message: "What is your GitHub repository for this project?"
     },
     
 
@@ -90,7 +90,7 @@ function writeToFile(data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function(data){
-        console.log("This is data", data);
+        console.log("Data", data);
     let answers = generateMarkdown(data);
     console.log(answers);
     writeToFile(answers);
