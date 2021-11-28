@@ -52,7 +52,7 @@ if (data.license === "IBM") {
    return "https://opensource.org/licenses/MIT"
  }
 
- // Might need work     
+ // return none   
  if (data.license === "None") {
    return ""
  }
@@ -110,5 +110,4 @@ function generateMarkdown(data) {
 `;
 }
 
-// Exporting function (Hint: require in other files. Give access)
 module.exports = generateMarkdown;
