@@ -33,5 +33,5 @@
   #### Video tutorial link: https://watch.screencastify.com/v/Z0rUTMyZc0aIHU7dJ71w
 
 <p align="center">
-  <img src="images/Screen Shot 2021-11-28 at 11.31.47 AM.png" width="350" title="hover text" alt="">
+  <img src="images/Screen Shot 2021-11-28 at 11.31.47 AM.png" width="750" title="hover text" alt="">
 </p> <br>
