@@ -18,60 +18,61 @@ const questions = [{
 },
 
 {
-type: "input",
-name: "Installation",
-message: "What steps are required to install and run your project?"
+    type: "input",
+    name: "Installation",
+    message: "What steps are required to install and run your project?"
 },
 
 {
     type: "input",
     name: "Usage",
     message: "What instructions do you need to use your application?"
-    },
+},
     
    
-    {
+{
         
-        type: "input",
-        name: "Contribution",
-        message: "Add your contributors."
-    },
+    type: "input",
+    name: "Contribution",
+    message: "Add your contributors."
+ },
     
-    {
+{
         
-        type: "input",
-        name: "Test",
-        message: "What are your testing commands?"
-    },
+    type: "input",
+    name: "Test",
+    message: "What are your testing commands?"
+},
     
-    {
-        type: "list",
-        name: "license",
-        message: "What license do you use?",
+{
+    type: "list",
+    name: "license",
+    message: "What license do you use?",
     
-        choices: [
-            "Apache", "Boost", "Eclipse" , "IBM", "MIT", "None"
-        ]
-    },
+    choices: [
+    "Apache", "Boost", "Eclipse" , "IBM", "MIT", "None"
+]
+},
     
-    {
+{
     
-        type: "input",
-        name: "Email",
-        message: "What is your Email? address?"
-    },
+    type: "input",
+    name: "Email",
+    message: "What is your Email? address?"
+},
     
-    {
+{
     
-        type: "input",
-        name: "GitHub",
-        message: "What is your GitHub username for this project?"
-    },
-    {
+    type: "input",
+    name: "GitHub",
+    message: "What is your GitHub username for this project?"
+},
+
+{
     type: "input",
     name: "Repo",
     message: "What is your GitHub repository for this project?"
-    },
+},
     
 
 ];
